@@ -86,6 +86,10 @@ var CURRENCIES = [{
     name: 'callisto',
     symbol: 'clo',
     eip55: true
+},{
+    name: 'dash',
+    symbol: 'dash',
+    addressTypes: {prod: ['4c', '10'], testnet: ['8c', '13']}
 }];
 
 
