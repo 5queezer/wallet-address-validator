@@ -225,6 +225,11 @@ describe('WAValidator.validate()', function () {
             valid('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', 'callisto');
             valid('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', 'CLO');
         });
+
+        it('should return true for correct dash addresses', function () {
+            valid('XoAAqv3oUYZ6xRjX3brfbf9PotrGanS6Th', 'dash');
+            valid('yP5oXZQXBfBf9FyfZDpFiKDypxuNUKUV2E', 'dash', 'testnet');
+        });
     });
 
     describe('invalid results', function () {
@@ -318,6 +323,10 @@ describe('WAValidator.validate()', function () {
             invalid('0x02fcd51aAbB814FfFe17908fbc888A8975D839A5', 'ethereumclassic');
             invalid('0x02fcd51aAbB814FfFe17908fbc888A8975D839A5', 'etherzero');
             invalid('0x02fcd51aAbB814FfFe17908fbc888A8975D839A5', 'callisto');
+        });
+
+        it('should return false for incorrect dash addresses', function () {
+            commonTests('dash');
         });
     });
 });
