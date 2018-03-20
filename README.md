@@ -60,6 +60,7 @@ npm install wallet-address-validator
 * EthereumClassic/ETH, `'ethereumclassic'` or `'ETC'`
 * EthereumZero/ETZ, `'etherzero'` or `'ETZ'`
 * Callisto/CLO, `'callisto'` or `'CLO'`
+* Dash, `'dash'` or `'DASH'`
 
 
 ### Usage example
