@@ -67,7 +67,7 @@ npm install wallet-address-validator
 ```javascript
 var WAValidator = require('wallet-address-validator');
 
-var valid = WAValidator.validate('1KFzzGtDdnq5hrwxXGjwVnKzRbvf8WVxck', 'BTC');
+var valid = WAValidator.validate('3D2oetdNuZUqQHPJmcMDDHYoqkyNVsFk9r', 'BTC');
 if(valid)
 	console.log('This is a valid address');
 else
@@ -79,7 +79,7 @@ else
 ```javascript
 var WAValidator = require('wallet-address-validator');
 
-var valid = WAValidator.validate('1KFzzGtDdnq5hrwxXGjwVnKzRbvf8WVxck', 'litecoin', 'testnet');
+var valid = WAValidator.validate('3D2oetdNuZUqQHPJmcMDDHYoqkyNVsFk9r', 'litecoin', 'testnet');
 if(valid)
       console.log('This is a valid address');
 else
